@@ -4,7 +4,32 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Evaluator\**" />
+    <Compile Remove="TestList\**" />
+    <Compile Remove="TestQueue\**" />
+    <Compile Remove="TestStack\**" />
+    <Compile Remove="Tokenizer\**" />
+    <Compile Remove="Tokens\**" />
+    <EmbeddedResource Remove="Evaluator\**" />
+    <EmbeddedResource Remove="TestList\**" />
+    <EmbeddedResource Remove="TestQueue\**" />
+    <EmbeddedResource Remove="TestStack\**" />
+    <EmbeddedResource Remove="Tokenizer\**" />
+    <EmbeddedResource Remove="Tokens\**" />
+    <None Remove="Evaluator\**" />
+    <None Remove="TestList\**" />
+    <None Remove="TestQueue\**" />
+    <None Remove="TestStack\**" />
+    <None Remove="Tokenizer\**" />
+    <None Remove="Tokens\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".gitconfig" />
+    <None Remove=".gitignore" />
+  </ItemGroup>
 
 </Project>
