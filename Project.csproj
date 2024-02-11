@@ -4,7 +4,6 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,6 +30,13 @@
   <ItemGroup>
     <None Remove=".gitconfig" />
     <None Remove=".gitignore" />
+    <None Remove="data\dict-5.txt" />
+    <None Remove="data\puzzle-5.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="data\dict-5.txt" />
+    <EmbeddedResource Include="data\puzzle-5.txt" />
   </ItemGroup>
 
 </Project>
